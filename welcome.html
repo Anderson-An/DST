@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面-X-admin2.0</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <link rel="shortcut icon" href=" ./favicon.ico" />
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/xadmin.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+     <!--  添加时钟插件-->
+     <div class="clockdiv">
+            <canvas id="dom" width="120" height="120">时钟canvas</canvas>
+     </div>
+    <div class="x-body layui-anim layui-anim-up">
+        <blockquote class="layui-elem-quote" id="clock">欢迎管理员：
+         <!-- <span class="x-red">test</span> 当前时间:2018-12-22 13:50:53 -->
+        </blockquote>
+       
+
+        <fieldset class="layui-elem-field">
+            <legend>TEAM数据统计</legend>
+            <div class="layui-field-box">
+                <div class="layui-col-md12">
+                    <div class="layui-card">
+                        <div class="layui-card-body">
+                            <div class="layui-carousel x-admin-carousel x-admin-backlog" lay-anim="" lay-indicator="inside"
+                                lay-arrow="none" style="width: 100%; height: 90px;">
+                                <div carousel-item="">
+                                    <ul class="layui-row layui-col-space10 layui-this">
+                                        <li class="layui-col-xs2">
+                                            <a href="javascript:;" class="x-admin-backlog-body">
+                                                <h3>RDR</h3>
+                                                <p>
+                                                    <cite>3.2%</cite></p>
+                                            </a>
+                                        </li>
+                                        <li class="layui-col-xs2">
+                                            <a href="javascript:;" class="x-admin-backlog-body">
+                                                <h3>RAR</h3>
+                                                <p>
+                                                    <cite>20%</cite></p>
+                                            </a>
+                                        </li>
+                                        <li class="layui-col-xs2">
+                                            <a href="javascript:;" class="x-admin-backlog-body">
+                                                <h3>ACD</h3>
+                                                <p>
+                                                    <cite>1900</cite></p>
+                                            </a>
+                                        </li>
+                                        <li class="layui-col-xs2">
+                                            <a href="javascript:;" class="x-admin-backlog-body">
+                                                <h3>MPD</h3>
+                                                <p>
+                                                    <cite>1.21%</cite></p>
+                                            </a>
+                                        </li>
+                                        <li class="layui-col-xs2">
+                                            <a href="javascript:;" class="x-admin-backlog-body">
+                                                <h3>CE</h3>
+                                                <p>
+                                                    <cite>99%</cite></p>
+                                            </a>
+                                        </li>
+                                        <li class="layui-col-xs2">
+                                            <a href="javascript:;" class="x-admin-backlog-body">
+                                                <h3>LCES</h3>
+                                                <p>
+                                                    <cite>78%</cite></p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="layui-elem-field">
+            <legend>新流程通知</legend>
+            <div class="layui-field-box">
+                <table class="layui-table" lay-skin="line">
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <a class="x-a" href="/" target="_blank">升级L2新流程</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="x-a" href="/" target="_blank">关于腾讯京东固件升级</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <fieldset class="layui-elem-field">
+            <legend>系统信息</legend>
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <tbody>
+                        <tr>
+                            <th>xxx版本</th>
+                            <td>1.0.180420</td>
+                        </tr>
+                        <tr>
+                            <th>服务器地址</th>
+                            <td>x.xuebingsi.com</td>
+                        </tr>
+                        <tr>
+                            <th>操作系统</th>
+                            <td>WINNT</td>
+                        </tr>
+                        <tr>
+                            <th>运行环境</th>
+                            <td>Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9</td>
+                        </tr>
+                        <tr>
+                            <th>PHP版本</th>
+                            <td>5.6.27</td>
+                        </tr>
+                        <tr>
+                            <th>PHP运行方式</th>
+                            <td>cgi-fcgi</td>
+                        </tr>
+                        <tr>
+                            <th>MYSQL版本</th>
+                            <td>5.5.53</td>
+                        </tr>
+                        <tr>
+                            <th>ThinkPHP</th>
+                            <td>5.0.18</td>
+                        </tr>
+                        <tr>
+                            <th>上传附件限制</th>
+                            <td>2M</td>
+                        </tr>
+                        <tr>
+                            <th>执行时间限制</th>
+                            <td>30s</td>
+                        </tr>
+                        <tr>
+                            <th>剩余空间</th>
+                            <td>86015.2M</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <fieldset class="layui-elem-field">
+            <legend>开发团队</legend>
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <tbody>
+                        <tr>
+                            <th>版权所有</th>
+                            <td>xuebingsi(xuebingsi)
+                                <a href="http://x.xuebingsi.com/" class='x-a' target="_blank">访问官网</a></td>
+                        </tr>
+                        <tr>
+                            <th>开发者</th>
+                            <td>马志斌(113664000@qq.com)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <blockquote class="layui-elem-quote layui-quote-nm">感谢layui,百度Echarts,jquery,本系统由x-admin提供技术支持。</blockquote>
+    </div>
+
+    <script>
+
+        function styTime() {
+            var today = new Date();
+            // 公司内部周的算法是从每年2月的第一个星期六开始为第一周的第一天，一年共有52周；
+            function getWeekOfYear() {
+                var firstFeb = new Date(today.getFullYear(), 1, 2);
+                //获取2月1日是周几
+                var dayOfWeek = firstFeb.getDay();
+                //判断2月1日是否为周六
+                if (dayOfWeek != 6) {
+                    // 如果是周六，相差0天
+                    var lackDay = 0;
+                }
+                // 如果不是周六
+                else {
+                    //下一个周六相差lackDay天
+                    lackDay = 6 - dayOfWeek;
+                }
+                //第一周的第一天是2月1号再加上差几天是周六 对应的是几号
+                firstDay = new Date(today.getFullYear(), 1, 1 + lackDay);
+                //从1月1日起到现在一共的毫秒减去第一天的毫秒除以每天的毫秒向上取整
+                var d = Math.ceil((today.valueOf() - firstDay.valueOf()) / 86400000);
+                var result = Math.ceil(d / 7);
+                if (result > 0) { return result; }
+                else { return 52 + result }
+            };
+
+            var e = new Date,
+                t = e.getFullYear(),
+                n = e.getMonth() + 1,
+                r = e.getDate(),
+                g = e.getDay(),
+                a = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"),
+                w = getWeekOfYear(),
+                s = a[g],
+                i = e.getHours(),
+                o = e.getMinutes(),
+                u = e.getSeconds(),
+                y = "管理员提醒您：当前时间：<strong>" + i + "</strong>时:<strong>" + o + "</strong>分:<strong>" + u + "</strong>秒\t\t\t   当前日期：" + t + "年" + n + "月" + r + "日 " + s + "\t\t\t  第<strong style: font=30px >" + w + "</strong>周";
+            return document.getElementById("clock").innerHTML = y, styTime
+        }
+        setInterval(styTime(), 1e3);
+
+
+/**
+ * Created by Administrator on 2018/12/23.
+ * source from siwuxie095
+ */
+        var canvas = document.getElementById('dom');
+        var context = canvas.getContext('2d');
+        var height = context.canvas.height;
+        var width = context.canvas.width;
+        var r = width / 2;
+        var rem = width / 200;
+
+        //鏃堕挓鑳屾櫙
+        function drawBackground() {
+            context.save();
+            context.translate(r, r);
+            context.beginPath();
+            context.lineWidth = 8 * rem;
+            context.strokeStyle = "#000"
+            context.arc(0, 0, r - 5 * rem, 0, 2 * Math.PI, false);
+            context.stroke();
+            context.closePath();
+            //閬嶅巻灏忔椂鏁�
+            var houseNumble = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2];
+            houseNumble.forEach(function (number, i) {
+                context.textAlign = 'center';
+                context.textBaseline = 'middle'
+                context.font = 18 * rem + 'px Arial'
+                var rad = 2 * Math.PI / 12 * i;
+                var x = Math.cos(rad) * (r - 30 * rem);
+                var y = Math.sin(rad) * (r - 30 * rem);
+                context.fillText(number, x, y);
+            })
+            //瀹氫箟鍒诲害
+            for (var i = 0; i < 60; i++) {
+                var rad = 2 * Math.PI / 60 * i;
+                var x = Math.cos(rad) * (r - 18 * rem);
+                var y = Math.sin(rad) * (r - 18 * rem);
+                context.beginPath();
+                if (i % 5 == 0) {
+                    context.fillStyle = "#000"
+                    context.arc(x, y, 2 * rem, 0, 2 * Math.PI);
+                } else {
+                    context.fillStyle = "#ccc"
+                    context.arc(x, y, 2 * rem, 0, 2 * Math.PI);
+                }
+
+                context.fill();
+                context.closePath();
+            }
+        }
+        //瀹氫箟鏃堕拡
+        function drawHour(hour, minute) {
+            context.save();
+            context.beginPath();
+            context.lineWidth = 6 * rem;
+            context.lineCap = 'round'
+            var rad = 2 * Math.PI / 12 * hour;
+            var mrad = 2 * Math.PI / 12 / 60 * minute;
+            context.rotate(rad + mrad);
+            context.moveTo(0, 10 * rem);
+            context.lineTo(0, -r / 2);
+            context.stroke();
+            context.restore();
+        }
+        //分针
+        function drawMinute(minute) {
+            context.save();
+            context.beginPath();
+            context.lineWidth = 5 * rem;
+            context.lineCap = 'round';
+            var rad = 2 * Math.PI / 60 * minute;
+            context.rotate(rad);
+            context.moveTo(0, 17 * rem);
+            context.lineTo(0, -r + 22)
+            context.stroke();
+            context.restore();
+        }
+        //秒针
+        function drawSecond(second) {
+            context.save();
+            context.beginPath();
+            context.lineWidth = 2 * rem;
+            context.lineCap = 'round';
+            context.fillStyle = "red"
+            var rad = 2 * Math.PI / 60 * second;
+            context.rotate(rad);
+            context.moveTo(-2, 20);
+            context.lineTo(2, 20);
+            context.lineTo(1, -r + 18);
+            context.lineTo(-1, -r + 18);
+            context.fill();
+            context.restore();
+        }
+        //鐢讳腑蹇冪偣
+        function drawDot() {
+            context.beginPath();
+            context.fillStyle = "#fff"
+            context.arc(0, 0, 4 * rem, 0, 2 * Math.PI, false);
+            context.fill();
+        }
+        //鏃堕棿鍑芥暟锛岃鏃堕挓鏍规嵁褰撳墠鏃堕棿璺冲姩
+        function Draw() {
+            context.clearRect(0, 0, width, height);
+            var time = new Date();
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var second = time.getSeconds();
+            drawBackground();
+            drawHour(hour, minute);
+            drawMinute(minute);
+            drawSecond(second);
+            drawDot();
+            context.restore()
+        }
+
+        Draw();
+        setInterval(Draw, 1000);
+
+        //添加百度统计
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+
+</html>
